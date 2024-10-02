@@ -6,6 +6,7 @@ import img2 from "../../Components/Assets/product card2.jpg";
 import img3 from "../../Components/Assets/product card3.jpg";
 import img4 from "../../Components/Assets/product card4.jpg";
 import headingImg from "../../Components/Assets/product heading2.jpg"; 
+
 const Category1 = () => {
   const features = [
     {
@@ -62,8 +63,8 @@ const Category1 = () => {
                   <p className="opacity-100 text-white text-xl duration-500 group-hover:text-green-600">
                     {feature.description}
                   </p>
-                  {/* Updated Button with new style */}
-                  <button className="mt-4 px-4 py-2 bg-[rgb(255,213,0)] text-black rounded-md border border-[#7a7a7a] font-medium text-lg transition-all duration-100 shadow-[0_5px_1px_5px_rgb(255,255,255)] active:translate-y-1 active:shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
+                  {/* Updated Button with dark blue shadow */}
+                  <button className="mt-4 px-4 py-1 bg-[rgb(0,0,139)] text-white rounded-md border border-[#7a7a7a] font-medium text-lg transition-all duration-100 shadow-[0_5px_1px_5px_rgb(0,255,80)] active:translate-y-1 active:shadow-[0_2px_8px_rgba(0,0,0,0.3)]">
                     Explore
                   </button>
                 </div>
