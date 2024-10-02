@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import {ShopContext} from '../Context/ShopContext'
 import { useParams } from 'react-router-dom';
-import Breadcrumb from '../Components/Breakcrumb/Breadcrumb';
+// import Breadcrumb from '../Components/Breakcrumb/Breadcrumb';
 import Productdisplay from '../Components/Productdisplay/Productdisplay'
 import DescriptionBox from '../Components/DesciptionBox/DescriptionBox';
 
