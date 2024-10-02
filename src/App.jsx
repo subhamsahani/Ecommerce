@@ -3,31 +3,34 @@ import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Shop from './Pages/Shop'; // Assuming this is the file for the Shop page
-import ShopCategory from './Pages/ShopCategory'; 
+import Category1 from './Pages/Category1/Category1'; // New route for Men's category
+import Category2 from './Pages/Category2/Category2'; // New route for Women's category
+import Category3 from './Pages/Category3/Category3'; // New route for Kids' category
 import Product from './Pages/Product'; 
 import Cart from './Pages/Cart'; // Assuming you have a Cart component
 import LoginSignup from './Pages/LoginSignup';
 import Footer from './Components/Footer/Footer';
-import men_banner from './Components/Assets/banner_mens.png'
-import women_banner from './Components/Assets/banner_women.png'
-import kid_banner from './Components/Assets/banner_kids.png'
+import men_banner from './Components/Assets/banner_mens.png';
+import women_banner from './Components/Assets/banner_women.png';
+import kid_banner from './Components/Assets/banner_kids.png';
 
 const App = () => {
   return (
     <div>
-        <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>      <BrowserRouter>
+      <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+      <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path='/' element={<Shop />} />
-          <Route path='/mens' element={<ShopCategory banner={men_banner} category="men" />} />
-          <Route path='/womens' element={<ShopCategory banner={women_banner} category="women" />} />
-          <Route path='/kids' element={<ShopCategory banner={kid_banner} category="kid" />} />
+          <Route path='/mens' element={<Category1 />} /> {/* Updated route for Men's category */}
+          <Route path='/womens' element={<Category2 />} /> {/* Updated route for Women's category */}
+          <Route path='/kids' element={<Category3 />} /> {/* Updated route for Kids' category */}
           <Route path='/product/:productId' element={<Product />} />
           <Route path='/cart' element={<Cart />} />
           <Route path='/login' element={<LoginSignup />} />
           <Route path='/products/:productId' element={<Product />} />
         </Routes>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </div>
   );
