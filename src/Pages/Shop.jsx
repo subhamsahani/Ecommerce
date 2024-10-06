@@ -4,16 +4,17 @@ import Popular from '../Components/Popular/Popular'
 import Offers from '../Components/Offers/Offers'
 import NewCollections from '../Components/NewCollections/NewCollections'
 import NewsLetter from '../Components/NewsLetter/NewsLetter'
+import Footer from '../Components/Footer/Footer'
+import NewHero from '../Components/NewHero/NewHero'
 
 const Shop = () => {
   return (
-    <div>
+    <div >
       {/* <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div> */}
-      <Hero/>
-      {/* <Popular/> */}
-      {/* <Offers/> */}
-      {/* <NewCollections/> */}
-      {/* <NewsLetter/> */}
+      <NewHero/>
+      {/* <Hero/> */}
+      
+      <Footer/>
     </div>
   )
 }

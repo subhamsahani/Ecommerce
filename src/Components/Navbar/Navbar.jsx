@@ -50,7 +50,12 @@ const Navbar = () => {
                 </li>
             </ul>
             <div className="nav-login-cart">
-                <Link to='/login'><button>Login</button></Link>
+                <Link to='/login'>
+                    <a
+                        class="inline-block w-auto text-center min-w-[130px] px-6 py-4 text-white transition-all rounded-md  sm:w-auto bg-gradient-to-r from-blue-600 to-blue-500 hover:bg-gradient-to-b dark:shadow-blue-900 shadow-blue-200 hover:shadow-2xl hover:shadow-blue-400 hover:-tranneutral-y-px "
+                        href="">Login / Signup
+                    </a>
+                </Link>
                 <Link to='/cart'><img src={cart_icon} alt="" /></Link>
                 <div className='nav-cart-count'>0</div>
             </div>

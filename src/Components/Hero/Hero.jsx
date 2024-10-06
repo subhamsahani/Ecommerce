@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 import './Hero.css';
-import img_1 from '../Assets/img1.jpg';
-import img_2 from '../Assets/img2.jpg';
-import img_3 from '../Assets/img3.jpg';
-import img_4 from '../Assets/img4.jpg';
+import img_1 from '../Assets/img_1.jpg';
+import img_2 from '../Assets/img_2.jpeg';
+import img_3 from '../Assets/img_3.webp';
+import img_4 from '../Assets/img_4.jpeg';
 
 const Hero = () => {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
   const nextRef = useRef(null);
   const prevRef = useRef(null);
   const carouselRef = useRef(null);
@@ -61,60 +61,52 @@ const Hero = () => {
         <div className="item">
           <img src={img_1} alt="Slide 1" />
           <div className="content">
-            {/* <div className="author">LUNDEV</div> */}
-            <div className="title">CATEGORY 1</div>
+            <div className="title">Paintings</div>
             <div className="topic">ANIMAL</div>
             <div className="des">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde.
             </div>
             <div className="buttons">
-              <button onClick={() => navigate('/mens')}>SEE MORE</button> {/* Navigate to Men's category */}
-              <button>SUBSCRIBE</button>
+              <button onClick={() => navigate('/painting')}>SEE MORE</button>
             </div>
           </div>
         </div>
         <div className="item">
           <img src={img_2} alt="Slide 2" />
           <div className="content">
-            {/* <div className="author">LUNDEV</div> */}
-            <div className="title">CATEGORY 2</div>
+            <div className="title">Accessories</div>
             <div className="topic">ANIMAL</div>
             <div className="des">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde.
             </div>
             <div className="buttons">
-              <button onClick={() => navigate('/womens')}>SEE MORE</button> {/* Navigate to Women's category */}
-              <button>SUBSCRIBE</button>
+              <button onClick={() => navigate('/womens')}>SEE MORE</button>
             </div>
           </div>
         </div>
         <div className="item">
           <img src={img_3} alt="Slide 3" />
           <div className="content">
-            {/* <div className="author">LUNDEV</div> */}
-            <div className="title">CATEGORY 3</div>
+            <div className="title">3D Arts</div>
             <div className="topic">ANIMAL</div>
             <div className="des">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde.
             </div>
             <div className="buttons">
-              <button onClick={() => navigate('/kids')}>SEE MORE</button> {/* Navigate to Kids category */}
-              <button>SUBSCRIBE</button>
+              <button onClick={() => navigate('/kids')}>SEE MORE</button>
             </div>
           </div>
         </div>
         <div className="item">
           <img src={img_4} alt="Slide 4" />
           <div className="content">
-            {/* <div className="author">LUNDEV</div> */}
-            <div className="title">CATEGORY 4</div>
+            <div className="title">T</div>
             <div className="topic">ANIMAL</div>
             <div className="des">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde, eaque optio ratione aliquid assumenda facere ab et quasi ducimus aut doloribus non numquam. Explicabo, laboriosam nisi reprehenderit tempora at laborum natus unde. Ut, exercitationem eum aperiam illo illum laudantium?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut sequi, rem magnam nesciunt minima placeat, itaque eum neque officiis unde.
             </div>
             <div className="buttons">
               <button>SEE MORE</button>
-              <button>SUBSCRIBE</button>
             </div>
           </div>
         </div>
@@ -124,28 +116,28 @@ const Hero = () => {
         <div className="item">
           <img src={img_1} alt="Thumbnail 1" />
           <div className="content">
-            <div className="title">Name Slider</div>
+            <div className="title">Paintings</div>
             <div className="description">Description</div>
           </div>
         </div>
         <div className="item">
           <img src={img_2} alt="Thumbnail 2" />
           <div className="content">
-            <div className="title">Name Slider</div>
+            <div className="title">Accessories</div>
             <div className="description">Description</div>
           </div>
         </div>
         <div className="item">
           <img src={img_3} alt="Thumbnail 3" />
           <div className="content">
-            <div className="title">Name Slider</div>
+            <div className="title">3D Arts</div>
             <div className="description">Description</div>
           </div>
         </div>
         <div className="item">
           <img src={img_4} alt="Thumbnail 4" />
           <div className="content">
-            <div className="title">Name Slider</div>
+            <div className="title">Toys</div>
             <div className="description">Description</div>
           </div>
         </div>

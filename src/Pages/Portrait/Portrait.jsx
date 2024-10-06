@@ -1,6 +1,7 @@
 import React from "react";
+import './Portrait.css'
 
-const ProductGrid = () => {
+const Portrait = () => {
   const products = [
     {
       id: 1,
@@ -146,4 +147,4 @@ const ProductGrid = () => {
   );
 };
 
-export default ProductGrid;
+export default Portrait;
